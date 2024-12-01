@@ -1,0 +1,785 @@
+Parameter 'function'=<function get_datasets.<locals>.preprocess_function at 0x7fc325caf670> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+Round 1
+Start Training!
+Sample 3371 of the training set: {'input_ids': [0, 21714, 1215, 3761, 1360, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 407, 47, 26, 47, 8, 10641, 1145, 149, 10, 7628, 1441, 4, 1336, 222, 24, 1369, 116, 50118, 10431, 41761, 176, 10431, 35, 2647, 6, 127, 25537, 21, 964, 19, 10641, 6, 98, 37, 2942, 201, 4, 50118, 10431, 41761, 134, 10431, 35, 6553, 37, 1137, 47, 99, 79, 21, 101, 78, 116, 50118, 10431, 41761, 176, 10431, 35, 3216, 6, 37, 1602, 69, 7, 162, 6, 8, 79, 12020, 101, 127, 1907, 4, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.3663, 'rouge2': 4.9451, 'rougeL': 16.5452, 'rougeLsum': 26.3939}, 'ppl': {'perplexity': 2.8222, 'ref_perplexity': 8.1682}, 'bertscore': {'precision': 85.5843, 'recall': 85.1009, 'f1': 85.3375}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.3093, 'rouge2': 4.2791, 'rougeL': 16.165, 'rougeLsum': 26.5416}, 'ppl': {'perplexity': 4.3563, 'ref_perplexity': 7.7379}, 'bertscore': {'precision': 84.6676, 'recall': 85.0091, 'f1': 84.8334}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 28.2807, 'rouge2': 4.9137, 'rougeL': 16.8967, 'rougeLsum': 27.4149}, 'ppl': {'perplexity': 1.4419, 'ref_perplexity': 7.4844}, 'bertscore': {'precision': 85.3645, 'recall': 85.1342, 'f1': 85.2457}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.8408, 'rouge2': 4.4049, 'rougeL': 17.0738, 'rougeLsum': 26.0541}, 'ppl': {'perplexity': 1.4814, 'ref_perplexity': 7.3816}, 'bertscore': {'precision': 86.01, 'recall': 85.1292, 'f1': 85.5634}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.0405, 'rouge2': 4.7891, 'rougeL': 16.9765, 'rougeLsum': 26.2673}, 'ppl': {'perplexity': 1.4433, 'ref_perplexity': 7.3415}, 'bertscore': {'precision': 85.3726, 'recall': 85.173, 'f1': 85.2696}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 2
+Start Training!
+Sample 98 of the training set: {'input_ids': [0, 21714, 1215, 5208, 2], 'attention_mask': [1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 653, 761, 9, 317, 5658, 52, 5956, 116, 50118, 10431, 41761, 176, 10431, 35, 85, 197, 28, 593, 7, 5, 2737, 4, 9081, 9, 201, 32, 205, 23, 562, 62, 11, 5, 19905, 8, 2789, 24, 16, 6, 5, 423, 52, 64, 120, 62, 4, 50118, 10431, 41761, 134, 10431, 35, 23743, 4, 280, 18, 5, 144, 505, 631, 7, 185, 88, 6077, 4, 38, 437, 45, 350, 3915, 59, 5, 1836, 9, 5, 3269, 4, 50118, 10431, 41761, 176, 10431, 35, 9081, 524, 38, 4, 407, 10, 650, 317, 16, 15983, 6, 53, 52, 581, 120, 10, 2671, 65, 114, 24, 18, 45, 3214, 4, 1832, 47, 1508, 114, 24, 18, 11, 10, 28269, 443, 116, 50118, 10431, 41761, 134, 10431, 35, 38, 218, 75, 1508, 4, 939, 437, 45, 10, 1109, 36170, 6, 53, 32170, 16, 357, 13, 77, 52, 33, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.3309, 'rouge2': 5.1561, 'rougeL': 16.3505, 'rougeLsum': 26.432}, 'ppl': {'perplexity': 2.3918, 'ref_perplexity': 8.0706}, 'bertscore': {'precision': 85.145, 'recall': 85.1728, 'f1': 85.1526}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 25.74, 'rouge2': 4.0142, 'rougeL': 16.2712, 'rougeLsum': 24.5571}, 'ppl': {'perplexity': 1.7447, 'ref_perplexity': 7.6006}, 'bertscore': {'precision': 85.5383, 'recall': 85.0106, 'f1': 85.27}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.3476, 'rouge2': 4.2603, 'rougeL': 16.4728, 'rougeLsum': 25.4783}, 'ppl': {'perplexity': 2.1226, 'ref_perplexity': 7.4051}, 'bertscore': {'precision': 85.9868, 'recall': 84.9407, 'f1': 85.4559}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.5506, 'rouge2': 4.468, 'rougeL': 16.5155, 'rougeLsum': 26.9388}, 'ppl': {'perplexity': 2.523, 'ref_perplexity': 7.2851}, 'bertscore': {'precision': 83.9675, 'recall': 85.2809, 'f1': 84.6153}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.8011, 'rouge2': 5.0087, 'rougeL': 17.425, 'rougeLsum': 27.1925}, 'ppl': {'perplexity': 1.6462, 'ref_perplexity': 7.2525}, 'bertscore': {'precision': 85.1881, 'recall': 85.3264, 'f1': 85.252}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 3
+Start Training!
+Sample 7050 of the training set: {'input_ids': [0, 21714, 1215, 398, 32913, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 152, 65, 1326, 372, 328, 38, 657, 5, 842, 1671, 1688, 4, 50118, 10431, 41761, 176, 10431, 35, 407, 109, 38, 4, 20, 3778, 4, 479, 479, 5, 6255, 4, 479, 479, 5, 6444, 328, 50118, 10431, 41761, 134, 10431, 35, 178, 4161, 7, 42, 328, 653, 109, 47, 206, 9, 17664, 6, 7358, 6, 2508, 12557, 30097, 6, 8, 5651, 116, 50118, 10431, 41761, 176, 10431, 35, 5534, 6, 1560, 328, 252, 2369, 5500, 4, 38, 269, 101, 70, 167, 383, 4, 50118, 10431, 41761, 134, 10431, 35, 8976, 4, 479, 479, 162, 6, 350, 4, 50118, 10431, 41761, 176, 10431, 35, 2647, 6, 4682, 5651, 4, 598, 28, 5322, 6, 38, 4157, 5651, 6, 53, 38, 657, 70, 5, 643, 4, 50118, 10431, 41761, 134, 10431, 35, 11468, 328, 6893, 23, 42, 328, 166, 64, 1095, 11, 10, 380, 2303, 50, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 22.9254, 'rouge2': 3.8896, 'rougeL': 15.3442, 'rougeLsum': 22.3233}, 'ppl': {'perplexity': 4.4581, 'ref_perplexity': 8.118}, 'bertscore': {'precision': 86.6972, 'recall': 84.6484, 'f1': 85.6526}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.1279, 'rouge2': 3.0703, 'rougeL': 15.6119, 'rougeLsum': 25.0278}, 'ppl': {'perplexity': 1.9645, 'ref_perplexity': 7.6772}, 'bertscore': {'precision': 85.1253, 'recall': 84.3911, 'f1': 84.7542}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 25.423, 'rouge2': 3.4792, 'rougeL': 15.6086, 'rougeLsum': 24.4783}, 'ppl': {'perplexity': 1.4746, 'ref_perplexity': 7.4761}, 'bertscore': {'precision': 85.2006, 'recall': 84.973, 'f1': 85.0835}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 28.2505, 'rouge2': 4.3411, 'rougeL': 17.1473, 'rougeLsum': 27.5111}, 'ppl': {'perplexity': 2.2361, 'ref_perplexity': 7.3724}, 'bertscore': {'precision': 85.4197, 'recall': 85.4008, 'f1': 85.4057}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.9019, 'rouge2': 4.3228, 'rougeL': 17.0675, 'rougeLsum': 26.2389}, 'ppl': {'perplexity': 1.3159, 'ref_perplexity': 7.3277}, 'bertscore': {'precision': 85.6453, 'recall': 85.0425, 'f1': 85.3401}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 4
+Start Training!
+Sample 9965 of the training set: {'input_ids': [0, 21714, 1215, 17729, 1225, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 653, 32, 47, 608, 15, 5, 3034, 6, 610, 116, 370, 32, 12382, 4, 3945, 47, 2494, 10, 822, 116, 50118, 10431, 41761, 176, 10431, 35, 440, 6, 3795, 4, 1619, 1053, 16, 567, 4, 38, 524, 546, 13, 103, 9869, 3591, 13, 127, 964, 4, 50118, 10431, 41761, 134, 10431, 35, 370, 1266, 47, 351, 75, 907, 3591, 31, 6464, 116, 50118, 10431, 41761, 176, 10431, 35, 3216, 6, 24, 18, 10, 92, 169, 7, 311, 9330, 8, 657, 4, 50118, 10431, 41761, 134, 10431, 35, 125, 24, 1302, 14, 47, 129, 236, 7, 1871, 418, 4, 50118, 10431, 41761, 176, 10431, 35, 8976, 6, 52, 64, 1871, 10, 319, 9, 2225, 114, 52, 70, 109, 98, 4, 50118, 10431, 41761, 134, 10431, 35, 24661, 205, 4, 38, 28010, 146, 1519, 53, 38, 2333, 2142, 3731, 7, 106, 4, 50118, 10431, 41761, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 21.1973, 'rouge2': 3.8016, 'rougeL': 14.7421, 'rougeLsum': 20.7174}, 'ppl': {'perplexity': 4.2243, 'ref_perplexity': 7.9311}, 'bertscore': {'precision': 86.879, 'recall': 84.8149, 'f1': 85.8234}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.5086, 'rouge2': 4.6892, 'rougeL': 16.8835, 'rougeLsum': 26.5769}, 'ppl': {'perplexity': 1.9277, 'ref_perplexity': 7.4809}, 'bertscore': {'precision': 85.6493, 'recall': 85.1093, 'f1': 85.371}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.0843, 'rouge2': 3.7178, 'rougeL': 16.0183, 'rougeLsum': 26.3425}, 'ppl': {'perplexity': 2.4895, 'ref_perplexity': 7.2865}, 'bertscore': {'precision': 84.6663, 'recall': 84.5995, 'f1': 84.6286}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.0099, 'rouge2': 4.6535, 'rougeL': 16.1422, 'rougeLsum': 26.0568}, 'ppl': {'perplexity': 3.1601, 'ref_perplexity': 7.1845}, 'bertscore': {'precision': 84.7134, 'recall': 85.2826, 'f1': 84.9934}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.5921, 'rouge2': 4.8418, 'rougeL': 17.3136, 'rougeLsum': 26.9863}, 'ppl': {'perplexity': 1.7987, 'ref_perplexity': 7.1495}, 'bertscore': {'precision': 85.2, 'recall': 85.2555, 'f1': 85.2238}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 5
+Start Training!
+Sample 3355 of the training set: {'input_ids': [0, 21714, 1215, 3103, 3118, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 2290, 47, 244, 162, 185, 209, 383, 7, 5, 512, 116, 1437, 50118, 10431, 41761, 176, 10431, 35, 4954, 6, 61, 512, 109, 47, 236, 162, 7, 342, 106, 11, 116, 1437, 50118, 10431, 41761, 134, 10431, 35, 16827, 106, 7, 127, 1141, 18, 512, 4, 1437, 50118, 10431, 41761, 176, 10431, 35, 6834, 65, 16, 23367, 116, 1437, 50118, 10431, 41761, 134, 10431, 35, 20, 2440, 8000, 11, 760, 9, 5, 8011, 4, 1437, 50118, 10431, 41761, 176, 10431, 35, 653, 197, 38, 185, 78, 116, 1437, 50118, 10431, 41761, 134, 10431, 35, 280, 3428, 81, 89, 6, 53, 2540, 28, 7316, 19, 24, 4, 85, 21, 10, 4085, 31, 127, 985, 12, 179, 12, 4656, 4, 1437, 50118, 10431, 41761, 176, 10431, 35, 1599, 75, 4022, 6, 38, 351, 75, 1874, 24, 4, 22545, 6, 24, 18, 269, 2016, 4, 38, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 25.9348, 'rouge2': 4.2828, 'rougeL': 15.6543, 'rougeLsum': 25.0849}, 'ppl': {'perplexity': 1.866, 'ref_perplexity': 8.1427}, 'bertscore': {'precision': 85.389, 'recall': 84.8163, 'f1': 85.0939}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.0643, 'rouge2': 5.0337, 'rougeL': 15.8948, 'rougeLsum': 26.0841}, 'ppl': {'perplexity': 1.7209, 'ref_perplexity': 7.6978}, 'bertscore': {'precision': 84.5519, 'recall': 85.0155, 'f1': 84.7805}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.98, 'rouge2': 4.5007, 'rougeL': 17.0749, 'rougeLsum': 26.3314}, 'ppl': {'perplexity': 1.4602, 'ref_perplexity': 7.4889}, 'bertscore': {'precision': 85.4341, 'recall': 84.8893, 'f1': 85.1577}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.9175, 'rouge2': 4.1538, 'rougeL': 16.6068, 'rougeLsum': 27.1028}, 'ppl': {'perplexity': 1.4204, 'ref_perplexity': 7.3832}, 'bertscore': {'precision': 84.8122, 'recall': 85.1554, 'f1': 84.9791}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 25.1616, 'rouge2': 4.3959, 'rougeL': 16.495, 'rougeLsum': 24.6008}, 'ppl': {'perplexity': 1.2695, 'ref_perplexity': 7.3473}, 'bertscore': {'precision': 85.3878, 'recall': 85.267, 'f1': 85.3246}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 6
+Start Training!
+Sample 9963 of the training set: {'input_ids': [0, 21714, 1215, 17729, 3546, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 407, 6, 259, 52, 32, 4, 8248, 11, 5, 6693, 4, 590, 162, 16, 3299, 1483, 1628, 4, 12521, 1628, 64, 47, 1137, 201, 10, 410, 59, 42, 4613, 317, 116, 50118, 10431, 41761, 176, 10431, 35, 3216, 6, 9, 768, 6, 25, 47, 64, 192, 6, 5, 6693, 16, 455, 9, 3980, 6, 7723, 8, 20289, 4, 50118, 10431, 41761, 134, 10431, 35, 3216, 6, 89, 32, 103, 7782, 8, 2721, 3451, 6128, 4, 1336, 171, 430, 6134, 9, 3451, 32, 89, 116, 50118, 10431, 41761, 176, 10431, 35, 2647, 6, 11, 95, 65, 3925, 22823, 254, 9, 5, 6693, 6, 47, 64, 465, 59, 18597, 430, 6134, 9, 3451, 6, 8, 171, 9, 167, 18597, 6134, 9, 3451, 218, 75, 1733, 11, 143, 97, 317, 11, 5, 232, 4, 50118, 10431, 41761, 134, 10431, 35, 178, 89, 32, 2213, 9, 3980, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.2977, 'rouge2': 4.9885, 'rougeL': 16.0908, 'rougeLsum': 25.3793}, 'ppl': {'perplexity': 1.7494, 'ref_perplexity': 8.2386}, 'bertscore': {'precision': 84.8184, 'recall': 85.2704, 'f1': 85.041}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.8896, 'rouge2': 4.8774, 'rougeL': 17.2202, 'rougeLsum': 25.9432}, 'ppl': {'perplexity': 2.3669, 'ref_perplexity': 7.7954}, 'bertscore': {'precision': 85.9913, 'recall': 85.3676, 'f1': 85.6746}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.0733, 'rouge2': 4.491, 'rougeL': 15.8714, 'rougeLsum': 26.3041}, 'ppl': {'perplexity': 1.7604, 'ref_perplexity': 7.5852}, 'bertscore': {'precision': 85.1648, 'recall': 85.3603, 'f1': 85.2566}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 28.3005, 'rouge2': 4.8711, 'rougeL': 17.1734, 'rougeLsum': 27.5864}, 'ppl': {'perplexity': 1.2577, 'ref_perplexity': 7.4808}, 'bertscore': {'precision': 85.7628, 'recall': 85.6354, 'f1': 85.6931}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.1336, 'rouge2': 5.0115, 'rougeL': 16.7238, 'rougeLsum': 26.2167}, 'ppl': {'perplexity': 1.8631, 'ref_perplexity': 7.4414}, 'bertscore': {'precision': 85.6722, 'recall': 85.0636, 'f1': 85.3622}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 7
+Start Training!
+Sample 7496 of the training set: {'input_ids': [0, 21714, 1215, 5677, 3714, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 2612, 32, 47, 98, 7001, 62, 116, 50118, 10431, 41761, 176, 10431, 35, 38, 524, 15, 127, 169, 66, 7, 5, 4821, 537, 9, 127, 138, 8, 38, 33, 7, 972, 103, 505, 916, 89, 4, 1336, 109, 38, 356, 116, 1534, 127, 146, 62, 4954, 116, 50118, 10431, 41761, 134, 10431, 35, 370, 356, 372, 4, 2486, 7855, 16, 67, 1969, 4, 50118, 10431, 41761, 176, 10431, 35, 1832, 47, 206, 38, 197, 3568, 10, 430, 3588, 116, 50118, 10431, 41761, 134, 10431, 35, 440, 6, 5, 65, 47, 33, 70, 1326, 372, 6, 941, 19, 110, 14327, 5582, 8, 110, 2549, 101, 14, 4, 50118, 10431, 41761, 176, 10431, 35, 4557, 13, 584, 98, 4, 1832, 47, 33, 143, 2956, 61, 26922, 38, 197, 3568, 116, 50118, 10431, 41761, 134, 10431, 35, 590, 14, 3588, 38, 1017, 224, 110, 1104, 11720, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.152, 'rouge2': 4.6508, 'rougeL': 16.0724, 'rougeLsum': 26.0768}, 'ppl': {'perplexity': 1.7062, 'ref_perplexity': 8.1987}, 'bertscore': {'precision': 84.1904, 'recall': 84.6459, 'f1': 84.4147}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.452, 'rouge2': 4.6419, 'rougeL': 17.179, 'rougeLsum': 25.7155}, 'ppl': {'perplexity': 1.2686, 'ref_perplexity': 7.7271}, 'bertscore': {'precision': 85.8821, 'recall': 84.7941, 'f1': 85.3318}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.2205, 'rouge2': 4.7804, 'rougeL': 16.7565, 'rougeLsum': 25.4194}, 'ppl': {'perplexity': 1.1921, 'ref_perplexity': 7.5017}, 'bertscore': {'precision': 86.8169, 'recall': 85.0295, 'f1': 85.9111}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 25.8692, 'rouge2': 4.3136, 'rougeL': 15.9004, 'rougeLsum': 24.8739}, 'ppl': {'perplexity': 25.3297, 'ref_perplexity': 7.3978}, 'bertscore': {'precision': 83.4446, 'recall': 84.9563, 'f1': 84.1902}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.022, 'rouge2': 4.207, 'rougeL': 16.9278, 'rougeLsum': 26.2839}, 'ppl': {'perplexity': 1.5411, 'ref_perplexity': 7.3643}, 'bertscore': {'precision': 85.5418, 'recall': 85.1097, 'f1': 85.3215}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 8
+Start Training!
+Sample 5829 of the training set: {'input_ids': [0, 21714, 1215, 4432, 2890, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 14826, 7, 84, 5566, 4, 1308, 766, 16, 255, 14607, 7301, 8, 38, 581, 311, 47, 198, 259, 4, 1234, 52, 581, 185, 10, 356, 23, 5, 9780, 61, 9108, 689, 26898, 33794, 4, 3401, 6, 42, 169, 4, 50118, 10431, 41761, 176, 10431, 35, 6233, 70, 5, 173, 626, 30, 604, 57, 4209, 30, 8408, 7796, 116, 50118, 10431, 41761, 134, 10431, 35, 3216, 6, 24, 34, 4, 50118, 10431, 41761, 176, 10431, 35, 22847, 3698, 162, 6, 99, 16, 42, 116, 50118, 10431, 41761, 134, 10431, 35, 152, 16, 10, 9326, 792, 4, 50118, 10431, 41761, 176, 10431, 35, 3945, 5, 10535, 11, 24, 156, 30, 110, 82, 116, 50118, 10431, 41761, 134, 10431, 35, 440, 6, 51, 32, 31, 97, 12126, 4, 50118, 10431, 41761, 176, 10431, 35, 653, 761, 9, 3822, 16, 24, 116, 50118, 10431, 41761, 134, 10431, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 24.483, 'rouge2': 3.258, 'rougeL': 15.4027, 'rougeLsum': 23.5217}, 'ppl': {'perplexity': 3.1956, 'ref_perplexity': 8.3117}, 'bertscore': {'precision': 85.4357, 'recall': 85.0214, 'f1': 85.2223}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.5709, 'rouge2': 4.8089, 'rougeL': 17.343, 'rougeLsum': 26.5228}, 'ppl': {'perplexity': 2.6425, 'ref_perplexity': 7.831}, 'bertscore': {'precision': 86.1907, 'recall': 84.8848, 'f1': 85.5298}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.0418, 'rouge2': 4.2685, 'rougeL': 16.5429, 'rougeLsum': 25.406}, 'ppl': {'perplexity': 1.7942, 'ref_perplexity': 7.5946}, 'bertscore': {'precision': 84.8989, 'recall': 84.7995, 'f1': 84.8464}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.1922, 'rouge2': 4.0124, 'rougeL': 15.1788, 'rougeLsum': 25.4944}, 'ppl': {'perplexity': 2.5873, 'ref_perplexity': 7.4865}, 'bertscore': {'precision': 84.708, 'recall': 85.131, 'f1': 84.9164}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.5515, 'rouge2': 4.9085, 'rougeL': 16.6206, 'rougeLsum': 26.6376}, 'ppl': {'perplexity': 1.4342, 'ref_perplexity': 7.4603}, 'bertscore': {'precision': 85.8098, 'recall': 84.9429, 'f1': 85.3701}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 9
+Start Training!
+Sample 7880 of the training set: {'input_ids': [0, 21714, 1215, 5479, 2940, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 9918, 47, 492, 162, 103, 2949, 116, 50118, 10431, 41761, 176, 10431, 35, 20, 3588, 16, 156, 15, 110, 20104, 4, 50118, 10431, 41761, 134, 10431, 35, 85, 2653, 70, 235, 4, 125, 114, 24, 58, 10, 20292, 3195, 6, 38, 40, 101, 24, 357, 4, 50118, 10431, 41761, 176, 10431, 35, 4954, 6, 2085, 47, 64, 860, 42, 65, 15, 4, 85, 18, 5718, 4, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.4805, 'rouge2': 5.2741, 'rougeL': 16.458, 'rougeLsum': 26.6793}, 'ppl': {'perplexity': 2.9392, 'ref_perplexity': 7.9461}, 'bertscore': {'precision': 85.392, 'recall': 85.2185, 'f1': 85.2996}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 28.6122, 'rouge2': 5.5396, 'rougeL': 16.23, 'rougeLsum': 27.6126}, 'ppl': {'perplexity': 5.2456, 'ref_perplexity': 7.5276}, 'bertscore': {'precision': 85.0044, 'recall': 85.3986, 'f1': 85.1958}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.1773, 'rouge2': 4.6674, 'rougeL': 16.4283, 'rougeLsum': 25.2744}, 'ppl': {'perplexity': 1.5404, 'ref_perplexity': 7.3219}, 'bertscore': {'precision': 85.221, 'recall': 85.1753, 'f1': 85.1947}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.8685, 'rouge2': 4.7873, 'rougeL': 17.0576, 'rougeLsum': 26.1837}, 'ppl': {'perplexity': 1.4463, 'ref_perplexity': 7.2246}, 'bertscore': {'precision': 84.7808, 'recall': 85.1057, 'f1': 84.9382}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 25.3806, 'rouge2': 3.9205, 'rougeL': 16.1574, 'rougeLsum': 24.7056}, 'ppl': {'perplexity': 1.4185, 'ref_perplexity': 7.1863}, 'bertscore': {'precision': 85.3417, 'recall': 85.4774, 'f1': 85.4063}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 10
+Start Training!
+Sample 4625 of the training set: {'input_ids': [0, 21714, 1215, 3761, 1244, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 1541, 904, 16, 248, 8651, 2993, 228, 7898, 12, 13139, 10337, 6, 274, 4, 384, 4, 163, 4, 22336, 17177, 4, 50118, 10431, 41761, 176, 10431, 35, 166, 206, 5, 425, 16, 350, 239, 4, 50118, 10431, 41761, 134, 10431, 35, 280, 18, 5, 275, 425, 52, 64, 904, 4, 50118, 10431, 41761, 176, 10431, 35, 166, 581, 33, 7, 2268, 24, 19, 127, 3504, 4, 50118, 10431, 41761, 134, 10431, 35, 166, 64, 492, 47, 10, 6720, 114, 47, 645, 13, 3169, 21782, 4, 2]}.
+***** Running training *****
+  Num examples = 11214
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 880
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.7195, 'rouge2': 5.1774, 'rougeL': 16.7868, 'rougeLsum': 26.8244}, 'ppl': {'perplexity': 1.8729, 'ref_perplexity': 8.0763}, 'bertscore': {'precision': 85.1331, 'recall': 85.1366, 'f1': 85.1313}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.0038, 'rouge2': 5.2208, 'rougeL': 16.4167, 'rougeLsum': 25.9853}, 'ppl': {'perplexity': 1.3039, 'ref_perplexity': 7.6217}, 'bertscore': {'precision': 85.7513, 'recall': 85.082, 'f1': 85.4123}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.5989, 'rouge2': 4.4494, 'rougeL': 16.3767, 'rougeLsum': 25.5576}, 'ppl': {'perplexity': 1.2925, 'ref_perplexity': 7.3801}, 'bertscore': {'precision': 85.3642, 'recall': 85.1984, 'f1': 85.276}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.0522, 'rouge2': 4.4355, 'rougeL': 17.4779, 'rougeLsum': 25.4997}, 'ppl': {'perplexity': 2.2137, 'ref_perplexity': 7.2744}, 'bertscore': {'precision': 86.1221, 'recall': 84.6681, 'f1': 85.3858}}
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.3826, 'rouge2': 3.6511, 'rougeL': 15.9523, 'rougeLsum': 25.1763}, 'ppl': {'perplexity': 1.1948, 'ref_perplexity': 7.2453}, 'bertscore': {'precision': 85.3492, 'recall': 85.0643, 'f1': 85.204}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round All
+Start Training!
+Sample 2944 of the training set: {'input_ids': [0, 21714, 1215, 2890, 3305, 2], 'attention_mask': [1, 1, 1, 1, 1, 1], 'labels': [0, 10431, 41761, 134, 10431, 35, 1534, 42, 5, 32013, 2392, 116, 3401, 2142, 41, 9121, 7, 5595, 8003, 13690, 1214, 4, 50118, 10431, 41761, 176, 10431, 35, 1534, 24, 9047, 116, 1541, 21633, 5332, 32, 45, 615, 7, 972, 358, 486, 4, 50118, 10431, 41761, 134, 10431, 35, 1525, 768, 4, 85, 18, 9047, 4, 38, 206, 5, 233, 4843, 16, 3606, 31, 13827, 40462, 17022, 354, 4, 91, 189, 1597, 114, 45, 3032, 11, 86, 4, 50118, 10431, 41761, 176, 10431, 35, 404, 235, 6, 52, 581, 283, 235, 409, 4, 50118, 10431, 41761, 134, 10431, 35, 3837, 47, 4, 50118, 10431, 41761, 176, 10431, 35, 4820, 18, 5, 3186, 116, 50118, 10431, 41761, 134, 10431, 35, 91, 18, 89, 11, 5, 929, 4, 91, 18, 182, 4812, 4, 50118, 10431, 41761, 176, 10431, 35, 1599, 75, 4022, 4, 166, 581, 342, 123, 11, 5, 28723, 5260, 2]}.
+***** Running training *****
+  Num examples = 12460
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 975
+***** Running testing *****
+  Num examples = 500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.1876, 'rouge2': 4.5118, 'rougeL': 15.7089, 'rougeLsum': 25.5008}, 'ppl': {'perplexity': 2.8641, 'ref_perplexity': 8.1656}, 'bertscore': {'precision': 84.7095, 'recall': 84.9344, 'f1': 84.8166}}
+***** Running testing *****
+  Num examples = 500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.2491, 'rouge2': 4.7652, 'rougeL': 16.9214, 'rougeLsum': 26.4681}, 'ppl': {'perplexity': 2.293, 'ref_perplexity': 7.7425}, 'bertscore': {'precision': 85.554, 'recall': 85.2592, 'f1': 85.4031}}
+***** Running testing *****
+  Num examples = 500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 26.9505, 'rouge2': 4.5443, 'rougeL': 16.3635, 'rougeLsum': 26.0692}, 'ppl': {'perplexity': 1.6241, 'ref_perplexity': 7.5585}, 'bertscore': {'precision': 85.2741, 'recall': 85.5968, 'f1': 85.4292}}
+***** Running testing *****
+  Num examples = 500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.8342, 'rouge2': 4.367, 'rougeL': 16.9729, 'rougeLsum': 27.0848}, 'ppl': {'perplexity': 1.8365, 'ref_perplexity': 7.4515}, 'bertscore': {'precision': 85.6853, 'recall': 85.4701, 'f1': 85.574}}
+***** Running testing *****
+  Num examples = 500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 27.6738, 'rouge2': 4.4576, 'rougeL': 16.8058, 'rougeLsum': 26.7439}, 'ppl': {'perplexity': 1.4471, 'ref_perplexity': 7.4238}, 'bertscore': {'precision': 84.4529, 'recall': 85.0918, 'f1': 84.7682}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+***** Running testing *****
+  Num examples = 1500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Parameter 'function'=<function get_datasets.<locals>.preprocess_function at 0x750f87d73430> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+***** Running testing *****
+  Num examples = 1500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Parameter 'function'=<function get_datasets.<locals>.preprocess_function at 0x7f782032f430> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 1246
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+***** Running testing *****
+  Num examples = 1500
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+

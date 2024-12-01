@@ -1,0 +1,45 @@
+Parameter 'function'=<function get_post_edit_training_datasets.<locals>.preprocess_function_train at 0x778435df5280> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+Sample 3056 of the training set: {'input_ids': [21603, 10, 7327, 19, 24184, 81, 8, 17879, 344, 23826, 11, 21485, 552, 3241, 3, 632, 18078, 1713, 308, 49, 969, 4893, 1303, 17, 5, 509, 87, 329, 940, 12150, 10539, 519, 4936, 948, 5, 8628, 845, 24, 8, 313, 19, 1083, 1180, 12, 2023, 11, 24, 8, 3240, 697, 962, 19, 1083, 3, 5885, 16735, 44, 3, 13263, 1846, 5, 1, 3320, 16557, 12977, 35, 1824, 2003, 8, 4357, 4201, 45, 23826, 12, 1060, 36, 30, 97, 5, 696, 2027, 13015, 19, 2924, 150, 7230, 3320, 3707, 3341, 2884, 4877, 62, 130, 163, 263, 2718, 13, 8, 962, 131, 227, 8, 2412, 3, 31779, 45, 20976, 1846, 6, 856, 251, 54, 5637, 1, 2678, 9433, 23, 106, 344, 23826, 11, 21485, 552, 3241, 3, 632, 18078, 1713, 308, 49, 969, 4893, 1303, 17, 5, 509, 87, 329, 940, 12150, 10539, 519, 4936, 948, 3320, 3707, 3341, 2884, 2018, 132, 6, 8, 313, 19, 1083, 1180, 12, 2023, 5, 3320, 16557, 12977, 35, 1824, 8400, 13288, 12, 28651, 140, 149, 3, 9, 969, 7, 1982, 39, 358, 21, 5099, 16735, 19, 5, 947, 62, 33, 44, 4357, 2668, 11, 34, 31, 7, 2162, 38, 16124, 5, 2048, 924, 5, 3320, 3707, 3341, 2884, 4877, 3, 9, 3240, 697, 962, 19, 1083, 3, 5885, 16735, 44, 3, 13263, 1846, 5, 11342, 21, 136, 25741, 2953, 5, 3320, 16557, 12977, 35, 1824, 466, 744, 31, 17, 483, 8, 685, 24, 34, 47, 2924, 38, 30, 97, 552, 209, 1962, 274, 34, 47, 788, 5, 1615, 78, 1480, 12, 752, 151, 214, 58, 3320, 3707, 3341, 2884, 493, 435, 270, 3, 18, 4893, 1303, 17, 5, 509, 87, 329, 940, 12150, 10539, 519, 4936, 948, 5, 1], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [7327, 19, 24184, 81, 8, 7230, 13, 8, 2412, 213, 16, 79, 737, 31, 17, 4862, 1884, 5, 8628, 937, 8, 1309, 12, 691, 8, 251, 81, 8, 9398, 7, 10321, 79, 530, 8, 251, 131, 8, 2412, 3, 31779, 45, 20976, 1846, 5, 1]}.
+***** Running training *****
+  Num examples = 8790
+  Num Epochs = 5
+  Instantaneous batch size per device = 32
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1375
+***** Running testing *****
+  Num examples = 660
+  Instantaneous batch size per device = 32
+  Total eval batch size = 32
+Using default tokenizer.
+{'rouge': {'rouge1': 57.6155, 'rouge2': 33.0879, 'rougeL': 48.3997, 'rougeLsum': 52.7791}, 'ppl': {'perplexity': 17.0109, 'ref_perplexity': 4.8977}, 'bertscore': {'precision': 90.1348, 'recall': 91.0556, 'f1': 90.5816}}
+***** Running testing *****
+  Num examples = 660
+  Instantaneous batch size per device = 32
+  Total eval batch size = 32
+Using default tokenizer.
+{'rouge': {'rouge1': 57.0947, 'rouge2': 32.5948, 'rougeL': 48.0774, 'rougeLsum': 52.3142}, 'ppl': {'perplexity': 82.8057, 'ref_perplexity': 5.2827}, 'bertscore': {'precision': 90.0722, 'recall': 91.1773, 'f1': 90.6107}}
+***** Running testing *****
+  Num examples = 660
+  Instantaneous batch size per device = 32
+  Total eval batch size = 32
+Using default tokenizer.
+{'rouge': {'rouge1': 57.1473, 'rouge2': 32.4551, 'rougeL': 47.4378, 'rougeLsum': 52.136}, 'ppl': {'perplexity': 152.2078, 'ref_perplexity': 5.9335}, 'bertscore': {'precision': 89.9258, 'recall': 91.2253, 'f1': 90.5599}}
+***** Running testing *****
+  Num examples = 660
+  Instantaneous batch size per device = 32
+  Total eval batch size = 32
+Using default tokenizer.
+{'rouge': {'rouge1': 57.0642, 'rouge2': 32.4028, 'rougeL': 47.6011, 'rougeLsum': 52.2012}, 'ppl': {'perplexity': 70.3534, 'ref_perplexity': 6.3687}, 'bertscore': {'precision': 90.0961, 'recall': 91.0724, 'f1': 90.5703}}
+***** Running testing *****
+  Num examples = 660
+  Instantaneous batch size per device = 32
+  Total eval batch size = 32
+Using default tokenizer.
+{'rouge': {'rouge1': 57.5249, 'rouge2': 32.5661, 'rougeL': 47.9143, 'rougeLsum': 52.6923}, 'ppl': {'perplexity': 123.2564, 'ref_perplexity': 6.6114}, 'bertscore': {'precision': 90.1249, 'recall': 91.1691, 'f1': 90.6331}}
+***** Running testing *****
+  Num examples = 660
+  Instantaneous batch size per device = 32
+  Total eval batch size = 32
+Using default tokenizer.
+{'rouge': {'rouge1': 51.8344, 'rouge2': 26.6573, 'rougeL': 42.0579, 'rougeLsum': 46.5927}, 'ppl': {'perplexity': 4513.1094, 'ref_perplexity': 6.1047}, 'bertscore': {'precision': 89.055, 'recall': 90.079, 'f1': 89.5503}}

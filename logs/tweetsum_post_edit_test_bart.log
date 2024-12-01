@@ -1,0 +1,19 @@
+Parameter 'function'=<function get_post_edit_training_datasets.<locals>.preprocess_function_train at 0x783ee2b73430> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+Using default tokenizer.
+Validation set raw results:
+{'rouge': {'rouge1': 44.1906, 'rouge2': 20.474, 'rougeL': 35.7453, 'rougeLsum': 40.1607}, 'ppl': {'perplexity': 5.5318}, 'bertscore': {'precision': 88.9539, 'recall': 88.1441, 'f1': 88.5354}}
+Using default tokenizer.
+Test set raw results:
+{'rouge': {'rouge1': 41.6972, 'rouge2': 17.7757, 'rougeL': 33.2392, 'rougeLsum': 37.3873}, 'ppl': {'perplexity': 4.9958}, 'bertscore': {'precision': 88.2906, 'recall': 87.6927, 'f1': 87.9759}}
+***** Running testing *****
+  Num examples = 660
+  Instantaneous batch size per device = 32
+  Total eval batch size = 32
+Using default tokenizer.
+{'rouge': {'rouge1': 58.9719, 'rouge2': 34.4443, 'rougeL': 49.5955, 'rougeLsum': 53.8206}, 'ppl': {'perplexity': 8.7379, 'ref_perplexity': 7.4312}, 'bertscore': {'precision': 90.5778, 'recall': 91.406, 'f1': 90.9798}}
+***** Running testing *****
+  Num examples = 660
+  Instantaneous batch size per device = 32
+  Total eval batch size = 32
+Using default tokenizer.
+{'rouge': {'rouge1': 53.7281, 'rouge2': 28.5923, 'rougeL': 43.8568, 'rougeLsum': 48.3973}, 'ppl': {'perplexity': 8.6295, 'ref_perplexity': 9.467}, 'bertscore': {'precision': 89.6695, 'recall': 90.5527, 'f1': 90.0952}}

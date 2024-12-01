@@ -1,0 +1,799 @@
+Parameter 'function'=<function get_datasets.<locals>.preprocess_function at 0x787c72d6bb80> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+Round 1
+Start Training!
+Sample 261 of the training set: {'input_ids': [0, 1039, 46715, 876, 98, 2035, 23, 2116, 477, 16381, 23, 379, 4, 1570, 1685, 19, 127, 979, 7, 28, 174, 51, 58, 8143, 5, 2131, 6696, 3563, 98, 1705, 17, 27, 90, 33, 65, 4, 38, 2162, 10, 2569, 4076, 1892, 484, 97, 916, 1432, 162, 54, 58, 174, 5, 16381, 593, 23, 379, 4, 541, 12846, 1491, 309, 7, 5, 1400, 1273, 86, 328, 50121, 50118, 1039, 39755, 39055, 12289, 3921, 12, 30557, 6, 2446, 13, 562, 11, 2842, 4, 38, 437, 269, 6661, 47, 348, 56, 10, 2430, 676, 11, 84, 1400, 682, 4, 9918, 47, 2540, 905, 162, 216, 99, 86, 5, 26059, 1203, 161, 24, 14454, 116, 112, 73, 176, 50121, 50118, 1039, 39755, 39055, 9918, 47, 2540, 67, 4559, 13, 162, 5, 97, 916, 58, 3276, 7, 2229, 2131, 6696, 23, 5, 86, 6, 350, 116, 404, 5, 275, 111, 3005, 3892, 132, 73, 176, 50121, 50118, 1039, 46715, 876, 31940, 17, 27, 90, 192, 143, 1273, 498, 11, 5, 16381, 53, 7869, 804, 137, 52, 439, 7, 20, 8, 24, 17, 27, 29, 2305, 204, 1685, 4, 166, 2035, 23, 379, 4, 996, 1099, 4420, 5, 97, 916, 770, 2131, 6696, 4, 50121, 50118, 1039, 46715, 876, 1578, 38, 206, 24, 531, 9, 57, 5, 8172, 14, 1437, 342, 5, 2572, 2696, 159, 15, 5, 22087, 95, 71, 52, 2162, 84, 2569, 6696, 98, 5, 916, 71, 201, 399, 17, 27, 90, 190, 33, 14, 1973, 1169, 50121, 50118, 1039, 46715, 876, 38, 1346, 14, 8143, 159, 16, 2139, 53, 2248, 27659, 137, 5, 1400, 21, 3172, 4, 50121, 50118, 1039, 39755, 39055, 38, 437, 6661, 7, 1798, 9, 5, 743, 47, 13590, 23, 84, 1400, 3921, 12, 30557, 479, 38, 64, 1346, 110, 1379, 4, 38, 33, 1595, 110, 3674, 7, 84, 1753, 2711, 98, 42, 64, 28, 4873, 4, 112, 73, 176, 1205, 640, 90, 4, 876, 73, 17163, 245, 1301, 2831, 134, 387, 1794, 50121, 50118, 1039, 39755, 39055, 38, 74, 67, 101, 7, 5124, 110, 1450, 15, 84, 3425, 1743, 13, 499, 6173, 6, 64, 47, 18695, 110, 455, 766, 8, 1100, 116, 39223, 111, 3309, 858, 132, 73, 176, 50121, 50118, 1039, 46715, 876, 1801, 1051, 24, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 133, 2111, 161, 14, 37, 1348, 5, 2116, 477, 16381, 23, 379, 4, 1570, 1685, 19, 39, 979, 8, 51, 222, 45, 120, 5, 2131, 6696, 66, 89, 8, 51, 58, 57, 174, 14, 51, 32, 8143, 5, 2131, 6696, 3563, 4, 20, 2936, 6990, 23, 99, 86, 5, 16381, 1203, 161, 24, 14454, 8, 6990, 7, 18695, 5, 455, 766, 8, 1100, 9, 5, 2111, 7, 5124, 5, 3674, 11, 49, 3425, 467, 13, 499, 304, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 40.6081, 'rouge2': 17.0137, 'rougeL': 31.887, 'rougeLsum': 36.0655}, 'ppl': {'perplexity': 3.538, 'ref_perplexity': 12.8441}, 'bertscore': {'precision': 87.8586, 'recall': 87.9401, 'f1': 87.8848}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 40.6444, 'rouge2': 16.4851, 'rougeL': 31.7008, 'rougeLsum': 35.7413}, 'ppl': {'perplexity': 2.5244, 'ref_perplexity': 12.1687}, 'bertscore': {'precision': 88.0608, 'recall': 88.096, 'f1': 88.0608}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 42.0988, 'rouge2': 18.8923, 'rougeL': 33.5453, 'rougeLsum': 38.0509}, 'ppl': {'perplexity': 5.7722, 'ref_perplexity': 12.0842}, 'bertscore': {'precision': 88.1942, 'recall': 88.5827, 'f1': 88.3723}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 41.452, 'rouge2': 17.7498, 'rougeL': 32.6784, 'rougeLsum': 36.9608}, 'ppl': {'perplexity': 2.2622, 'ref_perplexity': 12.157}, 'bertscore': {'precision': 88.0394, 'recall': 88.382, 'f1': 88.1944}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 42.3664, 'rouge2': 18.3966, 'rougeL': 33.621, 'rougeLsum': 37.8022}, 'ppl': {'perplexity': 1.9425, 'ref_perplexity': 12.4135}, 'bertscore': {'precision': 87.9257, 'recall': 88.5413, 'f1': 88.2179}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 2
+Start Training!
+Sample 344 of the training set: {'input_ids': [0, 22412, 6, 20451, 6208, 41610, 1698, 16, 95, 25, 43816, 8, 2058, 12, 27512, 25, 38, 2145, 24, 4, 50121, 50118, 1039, 43868, 3416, 12289, 6, 141, 64, 52, 244, 47, 116, 6834, 696, 32, 47, 519, 19, 110, 20451, 2257, 116, 2615, 47, 694, 1254, 13, 110, 696, 116, 37249, 104, 846, 50121, 50118, 1039, 9167, 14004, 16431, 22, 46448, 8, 4313, 113, 19662, 16611, 46421, 28716, 10070, 14, 38, 33, 7, 4190, 24704, 6, 8, 12328, 358, 367, 728, 4, 50121, 50118, 1039, 9167, 14004, 16431, 24005, 18, 660, 3654, 877, 16, 203, 20584, 8, 3845, 8, 481, 4, 50121, 50118, 1039, 43868, 3416, 12289, 6, 473, 42, 1369, 19, 70, 22745, 4620, 14, 47, 634, 13, 22, 46448, 8, 4313, 24681, 6319, 47, 4752, 5, 1553, 648, 116, 37249, 104, 846, 50121, 50118, 1039, 9167, 14004, 16431, 3216, 8, 4420, 4, 2055, 5, 33740, 15, 70, 127, 22745, 29, 32, 122, 34797, 62, 111, 38, 64, 75, 490, 106, 11, 24005, 5988, 6, 129, 15, 27019, 4, 50121, 50118, 1039, 43868, 3416, 12289, 13843, 6, 38, 74, 3608, 7, 9493, 33401, 5, 20451, 27019, 1553, 7, 192, 114, 42, 2607, 5, 696, 4, 3401, 618, 42, 696, 15, 84, 20678, 350, 4, 37249, 104, 846, 50121, 50118, 1039, 43868, 3416, 13843, 6, 259, 16, 10, 3104, 7, 84, 20678, 7, 618, 5, 696, 7, 4, 1205, 640, 90, 4, 876, 73, 26029, 9228, 487, 406, 574, 1178, 134, 1301, 50118, 35227, 104, 846, 50121, 50118, 1039, 9167, 14004, 16431, 1890, 16063, 9391, 27019, 8, 5898, 23894, 1006, 7, 5728, 5, 2870, 33740, 936, 4, 50121, 50118, 1039, 43868, 3416, 12289, 4219, 102, 6, 205, 7, 1798, 14, 4, 4557, 13, 5, 2935, 4, 3401, 905, 201, 216, 114, 47, 33, 143, 1142, 50, 240, 617, 244, 4, 35227, 104, 846, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 44799, 16, 13689, 59, 5, 2329, 14004, 2257, 11, 147, 22, 29238, 8, 1203, 113, 38845, 16611, 46421, 28716, 1836, 4190, 24704, 8, 12328, 358, 367, 728, 4, 18497, 2528, 7, 9493, 33401, 5, 2329, 14004, 10746, 1553, 8, 1394, 7, 1338, 66, 13, 617, 3485, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 48.9842, 'rouge2': 25.0996, 'rougeL': 40.1235, 'rougeLsum': 44.0045}, 'ppl': {'perplexity': 3.7316, 'ref_perplexity': 6.204}, 'bertscore': {'precision': 89.3803, 'recall': 89.3323, 'f1': 89.3432}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 48.535, 'rouge2': 24.339, 'rougeL': 39.7887, 'rougeLsum': 44.0499}, 'ppl': {'perplexity': 3.8394, 'ref_perplexity': 5.6277}, 'bertscore': {'precision': 89.4088, 'recall': 89.2679, 'f1': 89.3231}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.9421, 'rouge2': 25.646, 'rougeL': 40.7313, 'rougeLsum': 45.2615}, 'ppl': {'perplexity': 2.7102, 'ref_perplexity': 5.5847}, 'bertscore': {'precision': 89.8094, 'recall': 89.4976, 'f1': 89.6374}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.1387, 'rouge2': 24.8094, 'rougeL': 40.5196, 'rougeLsum': 45.191}, 'ppl': {'perplexity': 2.3096, 'ref_perplexity': 5.5375}, 'bertscore': {'precision': 89.4019, 'recall': 89.527, 'f1': 89.4493}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.8411, 'rouge2': 25.1098, 'rougeL': 40.767, 'rougeLsum': 45.7815}, 'ppl': {'perplexity': 3.8797, 'ref_perplexity': 5.5933}, 'bertscore': {'precision': 89.367, 'recall': 89.5871, 'f1': 89.4635}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 3
+Start Training!
+Sample 546 of the training set: {'input_ids': [0, 1039, 1225, 4390, 1570, 2540, 912, 8890, 99, 38, 860, 7, 1166, 19, 12103, 6287, 177, 28342, 4, 15446, 1178, 50121, 50118, 1039, 22782, 25037, 12289, 89, 328, 3945, 47, 7242, 42, 3495, 12, 658, 150, 634, 10, 2167, 1553, 50, 1830, 11407, 116, 111, 27027, 50121, 50118, 1039, 29, 17265, 6350, 622, 4, 96, 754, 38, 21, 95, 15, 622, 8, 24, 1102, 456, 77, 38, 1381, 7, 356, 23, 10, 3104, 4, 440, 3023, 11, 5, 2853, 235, 2797, 6, 56, 7, 13490, 50121, 50118, 1039, 22782, 25037, 8901, 42, 129, 1369, 77, 47, 304, 622, 116, 8901, 42, 1369, 77, 47, 304, 143, 97, 3798, 50, 3091, 116, 111, 530, 771, 50121, 50118, 1039, 29, 17265, 6350, 1801, 622, 98, 444, 6, 38, 7154, 356, 23, 5678, 15, 7409, 4, 38, 95, 213, 124, 8, 5, 200, 86, 24, 17, 27, 29, 45, 89, 50121, 50118, 1039, 22782, 25037, 3945, 47, 634, 5, 622, 1553, 50, 634, 1830, 11407, 116, 111, 530, 771, 50121, 50118, 1039, 29, 17265, 6350, 3166, 50121, 50118, 1039, 22782, 25037, 520, 47, 3753, 15, 5, 3495, 62, 6, 16, 24, 30970, 154, 47, 7, 10, 1082, 116, 111, 14559, 50121, 50118, 1039, 29, 17265, 6350, 11105, 38, 17, 27, 119, 45, 10739, 15, 24, 6, 38, 17, 27, 119, 667, 7, 120, 7495, 9, 24, 4, 50121, 50118, 1039, 22782, 25037, 166, 2198, 1346, 4, 3401, 2142, 201, 10, 10480, 32236, 6, 98, 14, 52, 64, 617, 3991, 47, 4, 111, 14559, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 133, 2111, 16, 13689, 14, 37, 16, 2114, 10, 12059, 3495, 62, 696, 8, 1818, 13, 41, 244, 4, 20, 2936, 553, 473, 5, 936, 11493, 11, 65, 1553, 50, 70, 8, 553, 123, 1437, 7, 2142, 10, 2228, 1579, 13, 617, 3485, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.4026, 'rouge2': 29.0857, 'rougeL': 42.7915, 'rougeLsum': 46.2634}, 'ppl': {'perplexity': 7.9517, 'ref_perplexity': 5.1063}, 'bertscore': {'precision': 90.1984, 'recall': 88.8539, 'f1': 89.5064}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.3565, 'rouge2': 27.5148, 'rougeL': 41.6315, 'rougeLsum': 45.6221}, 'ppl': {'perplexity': 3.4072, 'ref_perplexity': 4.9338}, 'bertscore': {'precision': 90.1868, 'recall': 88.9297, 'f1': 89.5402}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.2102, 'rouge2': 27.1771, 'rougeL': 41.8452, 'rougeLsum': 45.5249}, 'ppl': {'perplexity': 4.5522, 'ref_perplexity': 4.6909}, 'bertscore': {'precision': 90.1162, 'recall': 89.2104, 'f1': 89.6467}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 52.1369, 'rouge2': 29.1745, 'rougeL': 43.6036, 'rougeLsum': 47.8672}, 'ppl': {'perplexity': 2.5602, 'ref_perplexity': 4.5868}, 'bertscore': {'precision': 90.3001, 'recall': 89.5303, 'f1': 89.9008}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 52.1144, 'rouge2': 29.6103, 'rougeL': 43.7681, 'rougeLsum': 47.5679}, 'ppl': {'perplexity': 3.4729, 'ref_perplexity': 4.6674}, 'bertscore': {'precision': 90.2183, 'recall': 89.6565, 'f1': 89.9241}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 4
+Start Training!
+Sample 385 of the training set: {'input_ids': [0, 1039, 17906, 20892, 38873, 1437, 10704, 531, 28, 812, 1601, 116, 50121, 50118, 1039, 40349, 38143, 1437, 50118, 30086, 6, 766, 14921, 34, 416, 57, 156, 14649, 4, 17161, 352, 9115, 7, 110, 1047, 13, 5, 7692, 26785, 1766, 4, 4557, 111, 2344, 50121, 50118, 1039, 17906, 20892, 38873, 3837, 47, 7586, 392, 38, 216, 16, 24, 5, 766, 531, 28, 70, 812, 1601, 116, 50121, 50118, 1039, 40349, 38143, 24, 473, 45, 948, 114, 63, 11, 650, 50, 380, 5430, 4, 1620, 251, 25, 5, 24684, 16, 4577, 479, 405, 16, 2051, 7586, 5214, 43, 479, 22086, 12, 16750, 853, 50121, 50118, 1039, 17906, 20892, 38873, 392, 38, 216, 114, 38, 236, 464, 127, 2524, 1103, 40, 28, 141, 203, 116, 50121, 50118, 1039, 40349, 38143, 370, 64, 213, 7, 1554, 1580, 127, 12666, 11, 110, 1754, 20892, 4392, 7, 464, 110, 2524, 1248, 8, 86, 1241, 23209, 6, 959, 947, 19377, 131, 947, 19377, 131, 50121, 50118, 1039, 40349, 38143, 359, 19377, 131, 947, 19377, 131, 1437, 2524, 464, 4029, 8, 11031, 2249, 1640, 1594, 92, 11031, 16, 723, 43, 40, 28, 1340, 4, 370, 64, 129, 359, 19377, 131, 947, 19377, 131, 50121, 50118, 1039, 40349, 38143, 359, 19377, 131, 947, 19377, 131, 146, 1022, 62, 7, 2929, 722, 137, 3078, 86, 5824, 4, 111, 24021, 219, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 44799, 16, 17730, 9798, 59, 4201, 766, 150, 12666, 10, 2524, 8, 59, 5, 943, 1103, 13, 2992, 5, 2524, 4, 18497, 982, 14, 5, 2524, 464, 4029, 552, 19, 11031, 2249, 40, 28, 1340, 8, 3649, 7, 146, 1022, 62, 7, 2929, 1946, 2052, 7, 1768, 5824, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 51.32, 'rouge2': 28.7495, 'rougeL': 43.7755, 'rougeLsum': 47.9425}, 'ppl': {'perplexity': 3.8044, 'ref_perplexity': 5.3696}, 'bertscore': {'precision': 90.1105, 'recall': 89.3749, 'f1': 89.7302}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 52.139, 'rouge2': 28.5072, 'rougeL': 43.4776, 'rougeLsum': 47.9777}, 'ppl': {'perplexity': 4.3593, 'ref_perplexity': 5.0917}, 'bertscore': {'precision': 89.817, 'recall': 89.6732, 'f1': 89.7355}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 51.7532, 'rouge2': 29.0291, 'rougeL': 43.8907, 'rougeLsum': 47.8124}, 'ppl': {'perplexity': 4.5485, 'ref_perplexity': 4.8497}, 'bertscore': {'precision': 90.001, 'recall': 89.5682, 'f1': 89.7739}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 54.7788, 'rouge2': 31.4668, 'rougeL': 46.6245, 'rougeLsum': 50.9899}, 'ppl': {'perplexity': 2.8849, 'ref_perplexity': 4.8641}, 'bertscore': {'precision': 90.2408, 'recall': 90.2916, 'f1': 90.2566}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 54.8634, 'rouge2': 31.3389, 'rougeL': 46.0752, 'rougeLsum': 50.49}, 'ppl': {'perplexity': 2.847, 'ref_perplexity': 4.852}, 'bertscore': {'precision': 90.1162, 'recall': 90.428, 'f1': 90.2637}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 5
+Start Training!
+Sample 63 of the training set: {'input_ids': [0, 1039, 534, 19839, 28780, 20280, 6, 40, 89, 28, 143, 1272, 15, 5, 7717, 11, 10, 891, 9, 360, 86, 116, 17487, 50121, 50118, 1039, 25050, 17573, 12289, 2206, 4, 653, 3251, 32, 47, 164, 7, 28, 442, 2540, 116, 111, 3533, 50121, 50118, 1039, 534, 19839, 28780, 38, 437, 95, 8020, 31, 10600, 221, 7, 22727, 12, 104, 12, 448, 15, 389, 212, 50121, 50118, 1039, 25050, 17573, 2497, 662, 4, 3837, 47, 13, 110, 17730, 12708, 4, 509, 9, 5, 165, 40, 2519, 7, 47, 78, 631, 11, 5, 662, 4, 5095, 495, 50121, 50118, 1039, 534, 19839, 28780, 5148, 2446, 111, 596, 45, 122, 28749, 178, 596, 473, 24, 185, 98, 251, 7, 10418, 1328, 5, 363, 116, 17487, 50121, 50118, 1039, 534, 19839, 28780, 5148, 2446, 111, 596, 45, 122, 116, 17487, 50121, 50118, 1039, 534, 19839, 28780, 5148, 2446, 111, 596, 45, 122, 116, 17487, 50121, 50118, 1039, 25050, 17573, 440, 6091, 32, 421, 6, 518, 40, 422, 25, 20454, 23, 1205, 640, 90, 4, 876, 73, 282, 771, 1872, 100, 3540, 134, 242, 510, 19, 143, 10044, 335, 1278, 23, 1205, 640, 90, 4, 876, 73, 330, 104, 1864, 642, 245, 642, 25826, 1178, 139, 4, 50121, 50118, 1039, 534, 19839, 28780, 5148, 2446, 111, 596, 1705, 75, 939, 28, 5578, 9, 42, 94, 363, 116, 17487, 50121, 50118, 1039, 25050, 17573, 166, 33, 10, 165, 54, 4865, 84, 599, 1842, 4427, 8, 51, 6329, 244, 19, 697, 3251, 17730, 19947, 4, 19719, 42, 8574, 938, 75, 576, 94, 363, 4, 14523, 50121, 50118, 1039, 534, 19839, 28780, 5148, 117, 7697, 111, 31, 99, 498, 109, 51, 109, 14, 116, 17487, 50121, 50118, 1039, 25050, 17573, 20, 4427, 1719, 16, 227, 5832, 8, 321, 4697, 15, 186, 7033, 8, 227, 883, 612, 8, 13470, 612, 15, 12729, 4, 14523, 50121, 50118, 1039, 534, 19839, 28780, 5148, 3392, 47, 13, 110, 244, 50121, 50118, 1039, 534, 19839, 28780, 12289, 6, 16, 42, 202, 5, 276, 28749, 1205, 640, 90, 4, 876, 73, 329, 10643, 1864, 975, 90, 288, 1343, 26170, 50121, 50118, 1039, 25050, 17573, 12289, 4, 166, 214, 45, 4804, 1272, 3859, 53, 114, 932, 1022, 84, 998, 40, 28, 4752, 4, 3577, 50121, 50118, 1039, 534, 19839, 28780, 5148, 3392, 47, 13, 110, 244, 50121, 50118, 1039, 25050, 17573, 370, 214, 2814, 4, 6319, 10, 205, 3251, 4, 3577, 50121, 50118, 1039, 534, 19839, 28780, 4557, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 133, 2111, 6990, 40, 89, 28, 143, 1272, 15, 5, 7717, 11, 10, 891, 9, 360, 86, 4, 20, 2936, 6990, 99, 3251, 5, 2111, 16, 164, 7, 146, 8, 22604, 14, 89, 16, 117, 4646, 421, 6, 518, 40, 422, 25, 20454, 8, 3639, 14, 114, 932, 1022, 6, 14, 40, 28, 4752, 11, 49, 998, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 48.0788, 'rouge2': 25.6438, 'rougeL': 40.8232, 'rougeLsum': 44.4024}, 'ppl': {'perplexity': 17.345, 'ref_perplexity': 5.8804}, 'bertscore': {'precision': 89.7853, 'recall': 88.8099, 'f1': 89.2822}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.6592, 'rouge2': 26.6254, 'rougeL': 41.7849, 'rougeLsum': 45.6267}, 'ppl': {'perplexity': 3.3283, 'ref_perplexity': 5.5535}, 'bertscore': {'precision': 89.9303, 'recall': 89.6487, 'f1': 89.7754}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.4031, 'rouge2': 25.8588, 'rougeL': 40.9596, 'rougeLsum': 44.8934}, 'ppl': {'perplexity': 3.5278, 'ref_perplexity': 5.3853}, 'bertscore': {'precision': 89.6505, 'recall': 89.3596, 'f1': 89.4927}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.73, 'rouge2': 27.2696, 'rougeL': 42.2786, 'rougeLsum': 46.2025}, 'ppl': {'perplexity': 2.9277, 'ref_perplexity': 5.4643}, 'bertscore': {'precision': 89.7456, 'recall': 89.991, 'f1': 89.8553}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.6995, 'rouge2': 26.2521, 'rougeL': 42.0371, 'rougeLsum': 45.6431}, 'ppl': {'perplexity': 2.6164, 'ref_perplexity': 5.4097}, 'bertscore': {'precision': 89.705, 'recall': 89.6272, 'f1': 89.6549}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 6
+Start Training!
+Sample 447 of the training set: {'input_ids': [0, 1039, 3632, 22930, 1437, 596, 109, 38, 489, 562, 42, 5849, 2540, 244, 21567, 1215, 38557, 35, 20, 3653, 45261, 1286, 16, 21567, 4, 50121, 50118, 1039, 1898, 3079, 3248, 12289, 6, 98, 52, 64, 356, 88, 24, 115, 47, 2142, 201, 10, 27314, 9, 99, 47, 214, 1782, 116, 2700, 1589, 495, 50121, 50118, 1039, 3632, 22930, 38, 17, 27, 119, 45, 184, 235, 122, 53, 42, 16, 99, 38, 192, 1205, 640, 90, 4, 876, 73, 791, 24240, 30440, 119, 100, 298, 31700, 50121, 50118, 1039, 3632, 22930, 374, 127, 3034, 50121, 50118, 1039, 3632, 22930, 3401, 2369, 26601, 109, 402, 59, 42, 10, 319, 9, 82, 32, 519, 42, 936, 50121, 50118, 1039, 1898, 3079, 3248, 12289, 6, 2446, 13, 5, 27314, 4, 653, 2163, 109, 47, 3008, 235, 137, 562, 42, 5849, 116, 2700, 1589, 495, 50121, 50118, 1039, 3632, 22930, 38, 1381, 7, 213, 15, 6953, 4428, 8, 51, 240, 162, 7, 4686, 7, 8479, 14438, 8, 14, 24643, 62, 50121, 50118, 1039, 1898, 3079, 3248, 12289, 6, 52, 214, 45, 686, 99, 14735, 4428, 16, 116, 3945, 47, 441, 7, 7425, 88, 110, 1316, 1241, 5, 8479, 14438, 1553, 50, 15, 3748, 116, 1589, 495, 50121, 50118, 1039, 3632, 22930, 3216, 50121, 50118, 1039, 3632, 22930, 152, 16, 99, 6953, 4428, 16, 50121, 50118, 1039, 3632, 22930, 1437, 1205, 640, 90, 4, 876, 73, 38489, 45189, 398, 7164, 398, 100, 330, 50121, 50118, 1039, 1898, 3079, 3248, 12289, 6, 6661, 7, 1798, 47, 214, 519, 3605, 19, 42, 4, 6802, 52, 214, 45, 13778, 19, 6953, 4428, 4, 4557, 1589, 495, 50121, 50118, 1039, 3632, 22930, 85, 17, 27, 29, 30103, 416, 216, 99, 1102, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 133, 2111, 6990, 596, 37, 16, 562, 5, 5849, 6, 37, 1381, 7, 213, 15, 6953, 4428, 8, 24, 16, 1996, 123, 7, 4686, 7, 8479, 14438, 8, 14, 24643, 62, 4, 20, 2936, 6990, 7, 2142, 5, 27314, 9, 5, 5849, 5, 2111, 16, 562, 8, 6990, 549, 37, 16, 441, 7, 7425, 88, 39, 1316, 1241, 5, 8479, 14438, 1553, 50, 15, 3748, 8, 22604, 14, 51, 32, 45, 13778, 19, 6953, 4428, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 48.9569, 'rouge2': 26.8496, 'rougeL': 41.9947, 'rougeLsum': 45.7581}, 'ppl': {'perplexity': 2.6843, 'ref_perplexity': 5.5224}, 'bertscore': {'precision': 90.0256, 'recall': 88.8249, 'f1': 89.4102}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 51.9403, 'rouge2': 29.4694, 'rougeL': 44.6092, 'rougeLsum': 48.3558}, 'ppl': {'perplexity': 2.1371, 'ref_perplexity': 5.0822}, 'bertscore': {'precision': 90.1568, 'recall': 89.3625, 'f1': 89.7473}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 51.0011, 'rouge2': 27.8601, 'rougeL': 43.5026, 'rougeLsum': 47.1573}, 'ppl': {'perplexity': 3.8844, 'ref_perplexity': 4.9835}, 'bertscore': {'precision': 89.7118, 'recall': 89.1509, 'f1': 89.4184}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 54.4765, 'rouge2': 31.1586, 'rougeL': 46.5305, 'rougeLsum': 50.4605}, 'ppl': {'perplexity': 2.5719, 'ref_perplexity': 5.0451}, 'bertscore': {'precision': 90.3113, 'recall': 90.1527, 'f1': 90.2173}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 52.8614, 'rouge2': 29.4374, 'rougeL': 44.2236, 'rougeLsum': 48.6305}, 'ppl': {'perplexity': 3.8365, 'ref_perplexity': 5.0575}, 'bertscore': {'precision': 89.8295, 'recall': 89.8002, 'f1': 89.8029}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 7
+Start Training!
+Sample 137 of the training set: {'input_ids': [0, 13368, 787, 24270, 1215, 17906, 5924, 596, 16, 110, 849, 47899, 849, 3340, 45, 6901, 162, 7, 10061, 127, 12666, 116, 38, 437, 13959, 11, 19, 127, 19399, 2483, 2009, 13801, 4, 1205, 640, 90, 4, 876, 73, 4147, 7111, 347, 406, 428, 15993, 1000, 50121, 50118, 1039, 996, 3272, 1549, 318, 47, 214, 5, 1886, 14034, 6, 42, 197, 173, 4, 9918, 47, 18695, 5, 12666, 5135, 11, 864, 116, 37249, 18806, 9569, 50121, 50118, 1039, 24270, 1215, 17906, 5924, 85, 1006, 31, 5, 14050, 11407, 6, 53, 24, 630, 75, 173, 31, 5, 1830, 1553, 4, 20, 1553, 5699, 3616, 127, 12666, 25, 3748, 6, 12113, 5, 5849, 4, 50121, 50118, 1039, 996, 3272, 1549, 2096, 31935, 6, 6661, 59, 14, 4, 38, 348, 1581, 24, 18, 3208, 6, 38, 95, 240, 7, 216, 5, 1907, 9, 1028, 47, 214, 634, 8, 5, 11407, 4, 3208, 112, 73, 176, 50121, 50118, 1039, 996, 3272, 1549, 3805, 7, 4757, 19, 1204, 6992, 4, 38, 581, 1323, 42, 7, 84, 42398, 22100, 165, 4, 132, 73, 176, 37249, 18806, 9569, 50121, 50118, 1039, 24270, 1215, 17906, 5924, 22811, 12, 179, 11407, 11, 5, 1553, 6, 98, 6814, 3208, 11407, 4, 38, 304, 21857, 3208, 31, 1204, 4, 1876, 2446, 328, 50121, 50118, 1039, 996, 3272, 1549, 4557, 13, 14, 328, 9918, 47, 18695, 5, 1421, 9, 5, 1028, 8, 110, 12666, 5135, 6, 19, 110, 766, 6, 1047, 8, 1511, 346, 13, 573, 116, 112, 73, 176, 50121, 50118, 1039, 996, 3272, 1549, 252, 348, 26, 14, 24, 189, 28, 402, 1341, 650, 11, 5, 12666, 61, 40, 3211, 24, 160, 8, 74, 101, 7, 1649, 4, 132, 73, 176, 37249, 18806, 9569, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 44799, 16, 13689, 13, 45, 145, 441, 7, 10061, 5, 12666, 149, 5, 1830, 1553, 4, 18497, 16, 14030, 13, 5, 335, 2624, 5, 1028, 6, 12666, 8, 1081, 1254, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+Using the latest cached version of the module from /home/gaya/.cache/huggingface/modules/datasets_modules/metrics/rouge/227fae95835286691d562fea615974deddae382c6ef43b6ce877a3c327a7ebb1 (last modified on Tue Nov 26 20:41:57 2024) since it couldn't be found locally at rouge, or remotely on the Hugging Face Hub.
+Parameter 'function'=<function get_datasets.<locals>.preprocess_function at 0x74efa01721f0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 7
+Start Training!
+Sample 726 of the training set: {'input_ids': [0, 1039, 1225, 4432, 1096, 2373, 676, 19, 524, 20524, 6612, 1248, 50121, 50118, 1039, 1558, 3818, 1558, 38, 437, 6661, 59, 5, 26262, 676, 4, 9918, 47, 2540, 905, 201, 216, 99, 439, 1593, 98, 52, 64, 244, 47, 116, 37249, 38863, 50121, 50118, 1039, 25146, 28780, 939, 33, 2740, 634, 524, 20524, 582, 2394, 13, 78, 86, 8, 1055, 124, 9, 291, 207, 354, 45, 18994, 808, 5357, 7, 1316, 187, 379, 7033, 50121, 50118, 1039, 25146, 28780, 67, 17064, 9, 335, 576, 30, 19458, 544, 59, 881, 904, 61, 7, 2416, 50121, 50118, 1039, 1558, 3818, 1558, 38, 12844, 13, 143, 9655, 6, 52, 1017, 101, 7, 1649, 42, 8, 244, 4, 3401, 458, 110, 1254, 259, 1205, 640, 90, 4, 876, 73, 21525, 863, 4717, 975, 1343, 6961, 288, 8, 52, 581, 1338, 66, 7, 47, 14649, 4, 37249, 12550, 50121, 50118, 1039, 25146, 28780, 1051, 7, 5, 3104, 1286, 30, 1717, 50121, 50118, 1039, 1558, 3818, 1558, 4557, 13, 5, 7036, 4, 1541, 165, 40, 1649, 70, 5, 1254, 8, 1338, 66, 7, 47, 1010, 4, 37249, 4454, 50121, 50118, 1039, 25146, 28780, 141, 251, 416, 706, 298, 4926, 81, 4, 18636, 9357, 50121, 50118, 1039, 1558, 3818, 1558, 280, 18, 7782, 6, 3773, 14980, 4, 9918, 47, 1649, 259, 35, 1205, 640, 90, 4, 876, 73, 2586, 705, 398, 510, 329, 642, 791, 306, 250, 8, 905, 201, 216, 318, 47, 348, 829, 143, 1047, 25778, 31, 5, 592, 433, 165, 2624, 5, 696, 116, 37249, 39933, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 44799, 17730, 7651, 59, 1055, 124, 9, 291, 207, 45, 671, 31, 1645, 4, 18497, 4752, 14, 5, 2711, 40, 120, 124, 8, 553, 5, 2111, 7, 1649, 5, 1047, 40189, 7, 24, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 48.8043, 'rouge2': 24.1468, 'rougeL': 39.3818, 'rougeLsum': 44.2614}, 'ppl': {'perplexity': 5.4512, 'ref_perplexity': 6.2605}, 'bertscore': {'precision': 89.6676, 'recall': 89.1657, 'f1': 89.4036}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.3611, 'rouge2': 25.3834, 'rougeL': 40.113, 'rougeLsum': 44.6425}, 'ppl': {'perplexity': 4.2296, 'ref_perplexity': 5.7219}, 'bertscore': {'precision': 89.5983, 'recall': 89.3388, 'f1': 89.4568}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.0565, 'rouge2': 25.0965, 'rougeL': 40.0631, 'rougeLsum': 44.8673}, 'ppl': {'perplexity': 4.0608, 'ref_perplexity': 5.5304}, 'bertscore': {'precision': 89.6595, 'recall': 89.4141, 'f1': 89.525}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.8909, 'rouge2': 25.8631, 'rougeL': 40.6202, 'rougeLsum': 45.1839}, 'ppl': {'perplexity': 5.6297, 'ref_perplexity': 5.5173}, 'bertscore': {'precision': 89.7689, 'recall': 89.4536, 'f1': 89.5996}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.4187, 'rouge2': 26.9316, 'rougeL': 41.3878, 'rougeLsum': 45.7953}, 'ppl': {'perplexity': 3.3299, 'ref_perplexity': 5.5638}, 'bertscore': {'precision': 89.9376, 'recall': 89.5634, 'f1': 89.738}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 8
+Start Training!
+Sample 385 of the training set: {'input_ids': [0, 1039, 1949, 102, 1215, 438, 5347, 132, 2612, 10, 2111, 197, 6297, 528, 7, 4358, 10778, 227, 1114, 8, 371, 537, 3798, 4, 38, 236, 6089, 904, 1717, 48210, 281, 417, 96, 1553, 1205, 640, 90, 4, 876, 73, 462, 3662, 245, 495, 306, 863, 282, 245, 139, 50121, 50118, 1039, 1360, 1092, 4429, 166, 32, 6661, 13, 5, 24109, 1726, 7, 47, 4, 166, 33, 110, 1511, 1254, 4, 166, 40, 120, 124, 7, 47, 3691, 4, 50121, 50118, 1039, 1949, 102, 1215, 438, 5347, 38, 222, 7107, 106, 1254, 4, 12809, 154, 1528, 2472, 97, 87, 27620, 8, 10228, 12071, 4, 33659, 9970, 158, 1423, 4926, 19, 1114, 6, 7424, 4443, 11540, 1263, 50121, 50118, 1039, 1360, 1092, 4429, 287, 7869, 6, 2486, 2212, 16, 11, 2017, 8, 52, 32, 447, 15, 5, 276, 4, 3037, 29, 1157, 201, 103, 86, 7, 2935, 47, 15, 5, 276, 4, 50121, 50118, 1039, 1949, 102, 1215, 438, 5347, 3401, 192, 14, 24, 11630, 137, 253, 9, 42, 76, 4, 370, 362, 42, 251, 7, 1394, 162, 7, 2067, 55, 4, 1918, 38, 269, 4098, 19, 588, 1316, 116, 50121, 50118, 1039, 1949, 102, 1215, 438, 5347, 1801, 236, 7, 1394, 47, 65, 631, 4, 354, 42, 5, 2340, 2877, 47, 173, 50, 1534, 42, 5, 169, 47, 146, 2111, 4309, 696, 849, 42233, 102, 44799, 16431, 849, 43087, 3663, 50121, 50118, 1039, 1360, 1092, 4429, 8712, 20643, 13, 5, 3605, 4, 287, 7869, 6, 110, 1437, 2212, 19, 13579, 117, 112, 12, 1558, 2545, 3706, 27018, 32103, 16, 8179, 9052, 1640, 134, 73, 176, 43, 50118, 500, 571, 11622, 6, 50118, 495, 14980, 260, 4, 50121, 50118, 1039, 1360, 1092, 4429, 14, 47, 32, 45, 4973, 13, 5, 904, 142, 42, 904, 21, 10404, 149, 111, 28795, 17595, 359, 3914, 131, 1308, 28795, 3166, 129, 28795, 1640, 176, 73, 176, 43, 50121, 50118, 1039, 1949, 102, 1215, 438, 5347, 318, 24, 21, 5451, 904, 6, 596, 473, 24, 2082, 11, 371, 537, 1553, 4, 38, 6876, 1717, 129, 3264, 3081, 204, 119, 155, 2586, 537, 3798, 741, 90, 295, 90, 4496, 849, 3609, 405, 50121, 50118, 1039, 1360, 1092, 4429, 8712, 20643, 13, 5, 3605, 4, 166, 33, 1581, 110, 1511, 4617, 8, 2212, 4, 166, 581, 120, 11, 2842, 19, 47, 25, 1010, 25, 678, 4, 50121, 50118, 1039, 1360, 1092, 4429, 166, 74, 101, 7, 6296, 14, 42, 24027, 10404, 129, 31, 28795, 3166, 359, 3914, 131, 17595, 12113, 47, 33, 829, 2340, 1796, 4, 500, 571, 11622, 6, 863, 405, 1205, 640, 90, 4, 876, 73, 29920, 506, 1301, 571, 34311, 12997, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 44799, 16, 8026, 596, 51, 33, 7, 6297, 528, 7, 4372, 4044, 227, 1114, 8, 371, 537, 3798, 4, 18497, 3496, 14, 42, 904, 21, 10404, 129, 31, 28795, 3166, 8, 12113, 51, 33, 829, 2340, 1795, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.2891, 'rouge2': 26.7382, 'rougeL': 41.4033, 'rougeLsum': 44.9195}, 'ppl': {'perplexity': 5.322, 'ref_perplexity': 6.4421}, 'bertscore': {'precision': 90.0851, 'recall': 89.0094, 'f1': 89.5296}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.9529, 'rouge2': 26.7482, 'rougeL': 41.8569, 'rougeLsum': 46.0124}, 'ppl': {'perplexity': 36.8802, 'ref_perplexity': 6.0361}, 'bertscore': {'precision': 89.7064, 'recall': 89.5899, 'f1': 89.6366}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 51.7911, 'rouge2': 27.9395, 'rougeL': 43.1348, 'rougeLsum': 47.3316}, 'ppl': {'perplexity': 4.2165, 'ref_perplexity': 6.0524}, 'bertscore': {'precision': 89.674, 'recall': 89.8691, 'f1': 89.7575}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 52.0082, 'rouge2': 27.9752, 'rougeL': 42.7874, 'rougeLsum': 46.5644}, 'ppl': {'perplexity': 35.2114, 'ref_perplexity': 5.9079}, 'bertscore': {'precision': 89.7338, 'recall': 89.9307, 'f1': 89.8178}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 52.0441, 'rouge2': 28.3259, 'rougeL': 43.2009, 'rougeLsum': 47.189}, 'ppl': {'perplexity': 32.975, 'ref_perplexity': 5.9722}, 'bertscore': {'precision': 89.9235, 'recall': 89.9439, 'f1': 89.9208}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 9
+Start Training!
+Sample 660 of the training set: {'input_ids': [0, 100, 5170, 61, 40, 283, 78, 35, 5, 849, 26292, 42664, 6, 50, 10, 849, 17049, 6298, 10653, 14, 6566, 15637, 6731, 14516, 2115, 19841, 116, 50121, 50118, 1708, 269, 6, 479, 787, 20770, 38873, 2156, 127, 17025, 510, 34, 28671, 9804, 9, 127, 14516, 130, 498, 452, 4, 50121, 50118, 1039, 38014, 34322, 166, 236, 110, 1775, 447, 13, 47, 131, 52, 581, 109, 70, 52, 64, 7, 244, 4, 653, 32469, 16, 145, 341, 6, 8, 99, 1907, 9, 6731, 8612, 116, 50121, 50118, 1039, 20770, 38873, 38, 437, 634, 755, 8682, 6, 8, 51, 214, 3797, 8612, 4, 38, 1658, 1205, 640, 90, 4, 876, 73, 134, 1975, 4992, 673, 3933, 725, 119, 50121, 50118, 1039, 20770, 38873, 1216, 32, 5, 14516, 35, 1205, 640, 90, 4, 876, 73, 398, 267, 34547, 717, 306, 330, 401, 6335, 50121, 50118, 1039, 38014, 34322, 166, 5478, 14, 3104, 4, 6553, 42, 1369, 2052, 7, 18796, 7, 755, 8682, 6, 50, 71, 116, 50121, 50118, 1039, 20770, 38873, 85, 34, 1102, 15, 1448, 5133, 15181, 6, 8682, 6, 8, 122, 755, 8682, 4, 38, 3307, 277, 15019, 11, 4318, 61, 924, 696, 187, 7918, 41889, 50121, 50118, 1039, 38014, 34322, 8432, 24, 4, 18695, 201, 8, 52, 581, 535, 31, 89, 4, 1205, 640, 90, 4, 876, 73, 534, 14043, 1343, 791, 2036, 975, 642, 565, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 44799, 16, 13689, 59, 5, 696, 19, 39, 1775, 6298, 10653, 16257, 5, 6731, 8612, 4, 18497, 16, 27874, 9798, 11, 4617, 59, 5, 696, 8, 5034, 7, 1338, 66, 1241, 10480, 1579, 13, 617, 3485, 4, 2]}.
+***** Running training *****
+  Num examples = 792
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 495
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 46.7982, 'rouge2': 23.854, 'rougeL': 39.4193, 'rougeLsum': 42.8788}, 'ppl': {'perplexity': 3.2312, 'ref_perplexity': 6.7821}, 'bertscore': {'precision': 89.7287, 'recall': 88.7388, 'f1': 89.2157}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.4933, 'rouge2': 26.1295, 'rougeL': 42.1658, 'rougeLsum': 45.3765}, 'ppl': {'perplexity': 2.8563, 'ref_perplexity': 6.1093}, 'bertscore': {'precision': 89.8207, 'recall': 89.3363, 'f1': 89.5615}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.4029, 'rouge2': 26.264, 'rougeL': 41.2244, 'rougeLsum': 45.8254}, 'ppl': {'perplexity': 2.8156, 'ref_perplexity': 5.9715}, 'bertscore': {'precision': 89.3907, 'recall': 89.5725, 'f1': 89.4656}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.0687, 'rouge2': 26.0106, 'rougeL': 41.6887, 'rougeLsum': 45.4434}, 'ppl': {'perplexity': 3.0253, 'ref_perplexity': 5.9784}, 'bertscore': {'precision': 89.649, 'recall': 89.3042, 'f1': 89.4622}}
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 49.9917, 'rouge2': 26.3024, 'rougeL': 41.6447, 'rougeLsum': 45.3047}, 'ppl': {'perplexity': 2.7474, 'ref_perplexity': 5.892}, 'bertscore': {'precision': 89.5503, 'recall': 89.6202, 'f1': 89.5726}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round 10
+Start Training!
+Sample 128 of the training set: {'input_ids': [0, 1039, 46715, 876, 11, 9039, 2678, 19150, 12595, 40, 16534, 905, 8084, 213, 7, 3844, 1195, 87, 8253, 24, 4, 83, 455, 27483, 9, 13729, 8084, 6, 916, 32, 202, 2159, 4, 1205, 640, 90, 4, 876, 73, 863, 1343, 771, 975, 642, 530, 288, 510, 18941, 50121, 50118, 1039, 2022, 996, 5243, 12289, 89, 6, 38, 437, 98, 6661, 59, 42, 8084, 145, 375, 63, 1248, 359, 3914, 131, 38, 1346, 110, 10208, 4, 6553, 47, 905, 10, 9896, 216, 116, 39223, 111, 1655, 50121, 50118, 1039, 46715, 876, 38, 3978, 5, 1400, 1044, 6, 69, 1263, 21, 182, 6770, 4, 38, 206, 79, 782, 7, 185, 5, 696, 55, 3640, 1195, 87, 50121, 50118, 1039, 46715, 876, 39684, 146, 19791, 8, 1787, 29560, 5274, 7, 162, 4, 50121, 50118, 1039, 46715, 876, 20, 813, 453, 38, 1834, 7, 969, 55, 5440, 8, 575, 87, 1052, 222, 4, 6310, 19051, 269, 142, 38, 2807, 7, 2792, 89, 70, 385, 86, 50121, 50118, 1039, 2022, 996, 5243, 12289, 6, 38, 437, 269, 5779, 7, 1798, 14, 5, 1044, 399, 75, 2045, 7, 185, 42, 182, 3640, 4, 2615, 47, 2540, 18695, 162, 103, 1254, 116, 112, 73, 246, 50121, 50118, 1039, 2022, 996, 5243, 38, 236, 7, 120, 42, 1415, 88, 8, 9789, 124, 4, 2615, 47, 492, 162, 5, 766, 50, 10, 8194, 9, 5, 1044, 47, 1834, 19, 116, 132, 73, 246, 50121, 50118, 1039, 2022, 996, 5243, 38, 67, 236, 7, 7425, 42, 15, 5, 467, 4, 286, 162, 7, 109, 42, 64, 47, 905, 162, 216, 110, 455, 766, 8, 455, 1100, 116, 17161, 11246, 111, 2912, 783, 4, 155, 73, 246, 1205, 640, 90, 4, 876, 73, 17163, 245, 1301, 2831, 134, 387, 1794, 50121, 50118, 1039, 46715, 876, 2290, 18695, 47, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 133, 2111, 161, 14, 11, 9039, 2678, 19150, 12595, 5, 19363, 8084, 16, 57, 1088, 8, 916, 32, 202, 2159, 5, 13729, 8084, 4, 20, 2936, 23842, 5504, 13, 5, 8084, 145, 375, 63, 1248, 8, 6990, 7, 2142, 5, 455, 766, 8, 1100, 8, 7, 18695, 103, 55, 1254, 59, 5, 696, 7, 5728, 24, 4, 2]}.
+***** Running training *****
+  Num examples = 783
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 490
+***** Running testing *****
+  Num examples = 96
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 40.0904, 'rouge2': 15.1825, 'rougeL': 31.2624, 'rougeLsum': 35.8819}, 'ppl': {'perplexity': 7.9591, 'ref_perplexity': 10.8217}, 'bertscore': {'precision': 87.8067, 'recall': 88.3347, 'f1': 88.0584}}
+***** Running testing *****
+  Num examples = 96
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 41.5025, 'rouge2': 17.3152, 'rougeL': 33.094, 'rougeLsum': 37.6115}, 'ppl': {'perplexity': 3.6243, 'ref_perplexity': 9.9338}, 'bertscore': {'precision': 88.162, 'recall': 88.6012, 'f1': 88.3692}}
+***** Running testing *****
+  Num examples = 96
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 42.8721, 'rouge2': 17.0733, 'rougeL': 34.0953, 'rougeLsum': 38.2246}, 'ppl': {'perplexity': 4.8119, 'ref_perplexity': 9.7356}, 'bertscore': {'precision': 88.1729, 'recall': 88.8468, 'f1': 88.4962}}
+***** Running testing *****
+  Num examples = 96
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 40.5962, 'rouge2': 14.7927, 'rougeL': 31.0163, 'rougeLsum': 35.4813}, 'ppl': {'perplexity': 4.5741, 'ref_perplexity': 9.9208}, 'bertscore': {'precision': 87.4872, 'recall': 88.5677, 'f1': 88.0152}}
+***** Running testing *****
+  Num examples = 96
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 42.0892, 'rouge2': 15.476, 'rougeL': 32.16, 'rougeLsum': 36.6489}, 'ppl': {'perplexity': 4.9579, 'ref_perplexity': 9.905}, 'bertscore': {'precision': 87.6658, 'recall': 88.7523, 'f1': 88.197}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 96
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Round All
+Start Training!
+Sample 286 of the training set: {'input_ids': [0, 30086, 787, 27840, 4591, 438, 5347, 5, 6039, 158, 1553, 35084, 8, 12328, 6566, 15, 127, 4985, 4, 45144, 2577, 6, 46721, 73, 241, 39567, 34, 45, 1147, 4, 21575, 696, 116, 50121, 50118, 1039, 28497, 29911, 11468, 8880, 6, 14, 18, 45, 3035, 328, 6834, 13703, 1553, 1732, 32, 47, 878, 116, 1578, 6, 16, 42, 2909, 23, 143, 2167, 332, 36, 3341, 148, 27754, 6, 50, 150, 6288, 7, 930, 26610, 166, 581, 192, 99, 52, 64, 3608, 1589, 28435, 50121, 50118, 1039, 32110, 4591, 347, 5347, 3166, 35084, 8, 12328, 15, 490, 137, 38, 64, 190, 1649, 1732, 346, 4, 9147, 196, 31, 5, 5711, 698, 7248, 6, 665, 800, 158, 73, 1978, 4, 50121, 50118, 1039, 28497, 29911, 22279, 14, 4, 318, 47, 2220, 75, 1381, 42, 648, 6, 64, 47, 12721, 110, 4985, 116, 2615, 52, 67, 216, 77, 222, 42, 386, 2909, 116, 6871, 24, 71, 10, 2167, 2935, 116, 1589, 28435, 50121, 50118, 1039, 32110, 4591, 347, 5347, 8426, 2013, 154, 2282, 75, 1147, 4, 35465, 15, 302, 4, 50121, 50118, 1039, 28497, 29911, 8432, 24, 4, 1801, 7, 1649, 6, 16, 42, 67, 2909, 15, 143, 97, 2110, 116, 7238, 201, 1278, 1589, 863, 100, 50121, 50118, 1039, 32110, 4591, 347, 5347, 14321, 15, 127, 6894, 8, 1645, 2110, 4, 36996, 73, 8344, 1671, 129, 11493, 15, 127, 6039, 158, 4985, 4, 38, 348, 56, 7, 2198, 46721, 5, 1553, 13, 122, 142, 92, 8809, 2092, 7, 6814, 7, 22, 25266, 15, 9143, 113, 61, 67, 35084, 127, 467, 4, 2497, 6620, 328, 50121, 50118, 1039, 28497, 29911, 19719, 7, 1798, 14, 4, 2615, 47, 18695, 201, 110, 1316, 18, 1047, 1100, 50, 40952, 116, 2780, 18, 2324, 15, 89, 1589, 863, 717, 1205, 640, 90, 4, 876, 73, 4779, 597, 417, 1301, 500, 118, 487, 3750, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [0, 133, 2111, 16, 13689, 14, 37, 16, 2114, 11074, 696, 15, 39, 6410, 158, 17426, 1437, 190, 9493, 620, 9391, 5, 11988, 8, 12721, 154, 5, 467, 630, 75, 1147, 123, 7, 5728, 5, 696, 4, 20, 2936, 553, 5, 2111, 7, 385, 119, 39, 1047, 1100, 50, 40952, 4, 2]}.
+***** Running training *****
+  Num examples = 879
+  Num Epochs = 5
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 550
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 50.0758, 'rouge2': 26.5756, 'rougeL': 41.6394, 'rougeLsum': 45.5049}, 'ppl': {'perplexity': 8.4169, 'ref_perplexity': 5.6413}, 'bertscore': {'precision': 90.0876, 'recall': 89.1075, 'f1': 89.5823}}
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 53.5409, 'rouge2': 29.4207, 'rougeL': 44.6528, 'rougeLsum': 49.2789}, 'ppl': {'perplexity': 7.5773, 'ref_perplexity': 5.4034}, 'bertscore': {'precision': 90.0547, 'recall': 90.2213, 'f1': 90.1263}}
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 54.7859, 'rouge2': 30.5926, 'rougeL': 45.8055, 'rougeLsum': 50.2207}, 'ppl': {'perplexity': 7.3995, 'ref_perplexity': 5.3389}, 'bertscore': {'precision': 90.2172, 'recall': 90.3796, 'f1': 90.2886}}
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 54.7405, 'rouge2': 30.1458, 'rougeL': 46.0342, 'rougeLsum': 50.3715}, 'ppl': {'perplexity': 7.382, 'ref_perplexity': 5.1727}, 'bertscore': {'precision': 90.3716, 'recall': 90.3432, 'f1': 90.3481}}
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Using default tokenizer.
+{'rouge': {'rouge1': 53.7786, 'rouge2': 29.8869, 'rougeL': 45.0118, 'rougeLsum': 49.13}, 'ppl': {'perplexity': 7.9359, 'ref_perplexity': 5.2878}, 'bertscore': {'precision': 90.1327, 'recall': 90.2584, 'f1': 90.1855}}
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+Parameter 'function'=<function get_datasets.<locals>.preprocess_function at 0x7f731a1741f0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+Parameter 'function'=<function get_datasets.<locals>.preprocess_function at 0x70a8283311f0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 87
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 96
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
+
+Start Predicting!
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+***** Running testing *****
+  Num examples = 110
+  Instantaneous batch size per device = 4
+  Total eval batch size = 4
+
+
+
+
